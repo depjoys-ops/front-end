@@ -1,0 +1,13 @@
+{{define "footer"}}
+    <footer class="mt-5">
+        <div class="container">
+            <hr>
+            <div class="text-center text-muted mb-3">
+                <small>&copy; <span id="year"></span></small>
+            </div>
+        </div>
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+    </footer>
+{{end}}

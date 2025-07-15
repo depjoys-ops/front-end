@@ -1,0 +1,35 @@
+{{define "content"}}
+<div class="container py-4">
+    <h1 class="mt-4 mb-3">MessageFlow Service</h1>
+    <hr>
+
+    <div class="mb-5">
+        <h5 class="mb-2">Output</h5>
+        <div id="output" class="border p-3 bg-light">
+            <span class="text-muted">Output shows here...</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <h5 class="mb-2">Sent</h5>
+            <div class="border p-3 bg-light">
+                <pre id="payload" class="mb-0"><span class="text-muted">Nothing sent yet...</span></pre>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <h5 class="mb-2">Received</h5>
+            <div class="border p-3 bg-light">
+                <pre id="received" class="mb-0"><span class="text-muted">Nothing received yet...</span></pre>
+            </div>
+        </div>
+    </div>
+</div>
+{{end}}
+
+{{define "js"}}
+<script>
+
+</script>
+{{end}}
+

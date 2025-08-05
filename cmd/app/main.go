@@ -12,8 +12,8 @@ func main() {
 		render(w, "test.page.gohtml")
 	})
 
-	fmt.Println("Starting front end service on port 5000")
-	err := http.ListenAndServe(":5000", nil)
+	fmt.Println("Starting front end service on port 4002")
+	err := http.ListenAndServe(":4002", nil)
 	if err != nil {
 		log.Panic(err)
 	}

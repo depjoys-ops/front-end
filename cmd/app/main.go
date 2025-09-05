@@ -22,14 +22,14 @@ func main() {
 func render(w http.ResponseWriter, t string) {
 
 	partials := []string{
-		"./cmd/web/templates/base.layout.gohtml",
-		"./cmd/web/templates/header.partial.gohtml",
-		"./cmd/web/templates/footer.partial.gohtml",
+		"./cmd/app/templates/base.layout.gohtml",
+		"./cmd/app/templates/header.partial.gohtml",
+		"./cmd/app/templates/footer.partial.gohtml",
 	}
 
 	var templateSlice []string
 	templateSlice = append(templateSlice, partials...)
-	templateSlice = append(templateSlice, fmt.Sprintf("./cmd/web/templates/%s", t))
+	templateSlice = append(templateSlice, fmt.Sprintf("./cmd/app/templates/%s", t))
 
 	tmpl, err := template.ParseFiles(templateSlice...)
 
